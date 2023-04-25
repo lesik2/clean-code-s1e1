@@ -34,20 +34,20 @@ var createNewTaskElement=function(taskString){
 
     listItem.className="list-of-tasks__item";
     label.innerText=taskString;
-    label.className='list-of-tasks__task__name';
+    label.className='list-of-tasks__task-name';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     checkBox.className="list-of-tasks__checkbox";
     editInput.type="text";
-    editInput.className="input-task list-of-tasks__task__input";
+    editInput.className="input-task list-of-tasks__task-input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="button edit";
 
 
     deleteButton.className="button delete";
-    deleteButtonImg.className="list-of-tasks__label__delete";
+    deleteButtonImg.className="list-of-tasks__label-delete";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -85,8 +85,8 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('.list-of-tasks__task__input');
-    var label=listItem.querySelector(".list-of-tasks__task__name");
+    var editInput=listItem.querySelector('.list-of-tasks__task-input');
+    var label=listItem.querySelector(".list-of-tasks__task-name");
     var editBtn=listItem.querySelector(".edit");
     var containsClass=listItem.classList.contains("list-of-tasks__item_edit_mode");
     //If class of the parent is .editmode
