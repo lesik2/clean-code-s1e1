@@ -9,10 +9,10 @@
   display: block;
   text-align: right;
 }
-.header__img__matrix {
+.header__img {
   width: 100%;
 }
-.header__link__details {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -67,7 +67,7 @@
 .input-task:focus {
   color: #333;
 }
-.btn-add-refactor {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -77,7 +77,7 @@
   cursor: pointer;
   outline: none;
 }
-.btn-add-refactor:hover {
+.button:hover {
   color: #3a3a3a;
 }
 .list-of-tasks {
